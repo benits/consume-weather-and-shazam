@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/consume-weather-and-shazam/static/js/main.b8719200.chunk.js",
-    "main.js.map": "/consume-weather-and-shazam/static/js/main.b8719200.chunk.js.map",
+    "main.js": "/consume-weather-and-shazam/static/js/main.6b54662e.chunk.js",
+    "main.js.map": "/consume-weather-and-shazam/static/js/main.6b54662e.chunk.js.map",
     "runtime-main.js": "/consume-weather-and-shazam/static/js/runtime-main.0921ad36.js",
     "runtime-main.js.map": "/consume-weather-and-shazam/static/js/runtime-main.0921ad36.js.map",
     "static/js/2.b6534343.chunk.js": "/consume-weather-and-shazam/static/js/2.b6534343.chunk.js",
@@ -13,6 +13,6 @@
   "entrypoints": [
     "static/js/runtime-main.0921ad36.js",
     "static/js/2.b6534343.chunk.js",
-    "static/js/main.b8719200.chunk.js"
+    "static/js/main.6b54662e.chunk.js"
   ]
 }
