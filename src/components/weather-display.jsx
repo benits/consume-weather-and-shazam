@@ -1,14 +1,15 @@
 import {
   Heading,
-  HStack,
+  Stack,
   Text,
+  VStack,
 } from '@chakra-ui/react';
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 const WeatherDisplay = ({ local, description, temperature }) => (
-  <>
-    <HStack spacing={4}>
+  <VStack spacing={4} alignItems="flex-start">
+    <Stack spacing={[2, 4]} direction={['column', 'row']}>
       <Text fontSize="xl">Clima na localização:</Text>
       <Heading fontSize="2xl">
         {local}
@@ -16,15 +17,15 @@ const WeatherDisplay = ({ local, description, temperature }) => (
         {description}
         )
       </Heading>
-    </HStack>
-    <HStack spacing={4}>
+    </Stack>
+    <Stack spacing={[2, 4]} direction={['column', 'row']}>
       <Text fontSize="lg">Temperatura atual:</Text>
       <Heading fontSize="lg">
         {temperature}
         °
       </Heading>
-    </HStack>
-  </>
+    </Stack>
+  </VStack>
 );
 
 WeatherDisplay.propTypes = {

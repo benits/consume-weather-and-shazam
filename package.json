@@ -1,7 +1,8 @@
 {
-  "name": "prj-weather-shazam",
+  "name": "consume-weather-and-shazam",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://benits.github.io/consume-weather-and-shazam",
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.9",
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.22.0",
     "framer-motion": "^4.1.17",
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,7 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx} --fix"
+    "lint": "eslint src/**/*.{js,jsx} --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

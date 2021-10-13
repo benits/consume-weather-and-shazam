@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/consume-weather-and-shazam/static/js/main.cc697f06.chunk.js",
+    "main.js.map": "/consume-weather-and-shazam/static/js/main.cc697f06.chunk.js.map",
+    "runtime-main.js": "/consume-weather-and-shazam/static/js/runtime-main.0921ad36.js",
+    "runtime-main.js.map": "/consume-weather-and-shazam/static/js/runtime-main.0921ad36.js.map",
+    "static/js/2.4c8c7167.chunk.js": "/consume-weather-and-shazam/static/js/2.4c8c7167.chunk.js",
+    "static/js/2.4c8c7167.chunk.js.map": "/consume-weather-and-shazam/static/js/2.4c8c7167.chunk.js.map",
+    "index.html": "/consume-weather-and-shazam/index.html",
+    "static/js/2.4c8c7167.chunk.js.LICENSE.txt": "/consume-weather-and-shazam/static/js/2.4c8c7167.chunk.js.LICENSE.txt",
+    "static/media/block.64d85bbf.png": "/consume-weather-and-shazam/static/media/block.64d85bbf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0921ad36.js",
+    "static/js/2.4c8c7167.chunk.js",
+    "static/js/main.cc697f06.chunk.js"
+  ]
+}

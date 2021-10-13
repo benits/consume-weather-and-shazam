@@ -1,7 +1,5 @@
 import {
-  Center,
-  Flex,
-  Heading,
+  Center, Heading,
   Image,
   Link,
   SimpleGrid,
@@ -32,8 +30,8 @@ function MusicSection() {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <SimpleGrid columns={3} spacing={10}>
-            {!!loading && <Loading />}
+          {!!loading && <Loading />}
+          <SimpleGrid columns={[1, 3]} spacing={10}>
             {!loading && playlist.map((music) => (
               <Center
                 key={music.id}
@@ -46,17 +44,16 @@ function MusicSection() {
 
               >
                 <Image src={music.images.coverart} height="250px" />
-                <Flex>
-                  <VStack mt={4} maxWidth="250px" width="250px" alignItems="baseline" as={Link} href={music.url}>
-                    <Heading as="h4" fontSize="lg">{music.title}</Heading>
-                    <Text>
-                      Autor:
-                      {' '}
-                      {music.subtitle}
-                    </Text>
-                  </VStack>
 
-                </Flex>
+                <VStack mt={4} maxWidth="250px" width="250px" alignItems="baseline" as={Link} href={music.url}>
+                  <Heading as="h4" fontSize="lg">{music.title}</Heading>
+                  <Text>
+                    Autor:
+                    {' '}
+                    {music.subtitle}
+                  </Text>
+                </VStack>
+
               </Center>
             ))}
           </SimpleGrid>

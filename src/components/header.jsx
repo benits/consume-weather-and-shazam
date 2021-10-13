@@ -4,7 +4,7 @@ import {
   Center,
   FormControl,
   FormLabel,
-  HStack,
+  Stack,
   Input,
 } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
@@ -43,7 +43,7 @@ const Header = () => {
 
         <Box mt={8}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <HStack spacing={4} alignItems="end">
+            <Stack spacing={[4, 4]} direction={['column', 'row']} alignItems="end">
 
               <FormControl id="city" isRequired>
                 <FormLabel htmlFor="city">Buscar por cidade:</FormLabel>
@@ -55,8 +55,8 @@ const Header = () => {
                 />
               </FormControl>
 
-              <Button type="submit" colorScheme="blue" isLoading={loading}>Buscar</Button>
-            </HStack>
+              <Button type="submit" colorScheme="blue" isLoading={loading} width={['full', 'xs']}>Buscar</Button>
+            </Stack>
           </form>
         </Box>
       </Box>

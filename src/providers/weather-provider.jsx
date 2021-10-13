@@ -11,6 +11,8 @@ import PropTypes from 'prop-types';
 import React, { createContext, useEffect, useState } from 'react';
 import LocationBlock from '../assets/block.png';
 
+const API_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather';
+
 export const WeatherProviderContext = createContext({
   loading: false,
   weather: {},
@@ -24,7 +26,7 @@ const WeatherProvider = ({ children }) => {
 
   const [location, setLocation] = useState(false);
 
-  const getWeather = (lat, long) => axios.get('http://api.openweathermap.org/data/2.5/weather', {
+  const getWeather = (lat, long) => axios.get(API_WEATHER_URL, {
     params: {
       lat,
       lon: long,
@@ -34,7 +36,7 @@ const WeatherProvider = ({ children }) => {
     },
   });
 
-  const getWeatherforSearchByCity = (city) => axios.get('http://api.openweathermap.org/data/2.5/weather', {
+  const getWeatherforSearchByCity = (city) => axios.get(API_WEATHER_URL, {
     params: {
       q: city,
       appid: process.env.REACT_APP_OPEN_WHEATER_KEY,
